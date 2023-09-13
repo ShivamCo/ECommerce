@@ -30,7 +30,7 @@ export const ProductPage =  () => {
         try {
             
 
-             axios.get(`http://localhost:5001/productFilter/${input.category}/${input.lprice}/${input.hprice}/${input.rating}`).then((response) => {
+             axios.get(`https://ecombackend-30ez.onrender.com/productFilter/${input.category}/${input.lprice}/${input.hprice}/${input.rating}`).then((response) => {
                 setProductData(response.data)
            
 

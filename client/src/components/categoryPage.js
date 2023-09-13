@@ -10,7 +10,7 @@ export const CategoryPage = (props) => {
 
         try {
 
-            axios.get(`http://localhost:5001/productFilter/${props.category}/0/200000/0`).then((response) => {
+            axios.get(`https://ecombackend-30ez.onrender.com/productFilter/${props.category}/0/200000/0`).then((response) => {
                 
                 setCategoryData(response.data)
             })

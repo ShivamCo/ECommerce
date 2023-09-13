@@ -26,7 +26,7 @@ export const AuthUser = () => {
 
         try {
 
-            const response = await axios.post("http://localhost:5001/auth/register", input)
+            const response = await axios.post("https://ecombackend-30ez.onrender.com/auth/register", input)
             alert(response.data.message)
             window.location.replace('/auth')
             
@@ -48,7 +48,7 @@ export const AuthUser = () => {
 
         try {
 
-            const response = await axios.post("http://localhost:5001/auth/login", input)
+            const response = await axios.post("https://ecombackend-30ez.onrender.com/auth/login", input)
 
             if (response.data.message === "You Are Not Registered") {
                 alert("You Are Not Registered")

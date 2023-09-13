@@ -18,7 +18,7 @@ export const CartPage = () => {
 
         } else {
             try {
-                axios.get(`http://localhost:5001/cart/cart-list/${localStorage.userID}`).then((response) => {
+                axios.get(`https://ecombackend-30ez.onrender.com/cart/cart-list/${localStorage.userID}`).then((response) => {
                     setCartList(response.data)
 
 
@@ -42,7 +42,7 @@ export const CartPage = () => {
         console.log(event.target.value)
         try {
 
-            await axios.post(`http://localhost:5001/cart/remove-cart/${event.target.name}/${event.target.value}`).then((response) => {
+            await axios.post(`https://ecombackend-30ez.onrender.com/cart/remove-cart/${event.target.name}/${event.target.value}`).then((response) => {
                 alert(response.data.message)
             })
 

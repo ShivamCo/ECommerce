@@ -17,7 +17,7 @@ export const SingleProductPage = () => {
         ? 
         window.location.replace('/auth') 
         :
-        await axios.post("http://localhost:5001/cart/add-to-cart", {"id": event.target.value, "user": localStorage.getItem('userID')} )
+        await axios.post("https://ecombackend-30ez.onrender.com/cart/add-to-cart", {"id": event.target.value, "user": localStorage.getItem('userID')} )
         alert("Product Added To Cart")
         }
         
@@ -28,7 +28,7 @@ export const SingleProductPage = () => {
 
         try {
 
-            axios.get(`http://localhost:5001/details/singleProduct/${title}`).then((response) => {
+            axios.get(`https://ecombackend-30ez.onrender.com/details/singleProduct/${title}`).then((response) => {
                 setProductDetails(response.data)
 
             })

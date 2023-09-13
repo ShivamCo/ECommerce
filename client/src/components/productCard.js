@@ -10,7 +10,7 @@ export const ProductCard = (props) => {
         ? 
         window.location.replace('/auth') 
         :
-        await axios.post("http://localhost:5001/cart/add-to-cart", {"id": event.target.value, "user": localStorage.userID} )
+        await axios.post("https://ecombackend-30ez.onrender.com/cart/add-to-cart", {"id": event.target.value, "user": localStorage.userID} )
         alert("Product Added To Cart")
         }
         

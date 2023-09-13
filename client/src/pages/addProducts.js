@@ -37,7 +37,7 @@ export const AddProduct = () => {
 
         try {
 
-            const response = await axios.post("http://localhost:5001/product/upload", formData)
+            const response = await axios.post("https://ecombackend-30ez.onrender.com/product/upload", formData)
             alert(response.data.message)
             window.location.replace('/add-product')
 
