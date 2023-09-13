@@ -23,20 +23,20 @@ export const ProductCard = (props) => {
 
     return (
 
-        <div className=" drop-shadow-md bg-white border-2 border-green-800 border-opacity-30 pb-2 rounded-md" >
+        <div className=" sm:pb-1 drop-shadow-md bg-white border-2 border-green-800 border-opacity-30 pb-2 rounded-md" >
             <div>
                 <img
                     className=" rounded-t-md drop-shadow-xl "
                     alt="product"
-                    src={require("../images/products/"+props.image)} />
+                    src={ ("../images/products/"+props.image) ? require("../images/products/"+props.image) : <></> } />
             </div>
             <div className="pt-4">
 
-                <a
+                <h3
                 href={`/product-detail/${props.title}`}
                 value={props.title}
-                    className=" pl-3 pr-3 font-semibold text-lg text-sky-600 body-font font-poppins "
-                >{props.title}</a>
+                    className=" pl-3 text-left pr-3 font-semibold text-sm sm:text-lg text-sky-600 body-font font-poppins "
+                >{props.title}</h3>
 
             </div>
 
@@ -58,7 +58,7 @@ export const ProductCard = (props) => {
                 <button
                     value={props.id}
                     onClick={clickHandler}
-                    className=" font-semibold text-slate-700 w-full border-2 border-green-500 border-opacity-30 hover:bg-green-400 hover:text-white pl-3 pr-3 p-1 rounded-lg"
+                    className="font-semibold text-slate-700 w-full border-2 border-green-500 border-opacity-30 hover:bg-green-400 hover:text-white pl-3 pr-3 p-1 rounded-lg"
                 >Add To Cart</button>
             </div>
         </div>

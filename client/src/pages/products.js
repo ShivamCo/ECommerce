@@ -52,16 +52,16 @@ export const ProductPage =  () => {
         //body
         <div className=" bg-slate-200 h-screen ">
 
-            <div className=" grid justify-center">
+            <div className=" grid justify-center ">
                 <form
                     
                     className=" bg-sky-600 bg-opacity-10 m-5 p-3 grid sm:grid-cols-4 grid-cols-1 rounded-xl border-2 border-opacity-10 border-sky-800 ">
                     
-                    <div >
+                    <div className=" w-full " >
                     <label className=" text-lg p-2 text-slate-700 drop-shadow-sm font-semibold " for="category">Category</label>
                     <select
                         onChange={inputHandler}
-                        className="border-2 p-1 pl-2 pr-3 rounded-lg border-sky-500 border-opacity-30"
+                        className=" w-full  border-2 p-1 pl-2 pr-3 rounded-lg border-sky-500 border-opacity-30"
                         name="category">
                         <option selected value="All">All</option>
                         <option value="Iphone">Iphone</option>
@@ -72,10 +72,10 @@ export const ProductPage =  () => {
                     </div>
 
                     <div>
-                    <label className=" p-2 text-lg  text-slate-700 drop-shadow-sm font-semibold " for="category">Min Price</label>
+                    <label className=" w-full  p-2 text-lg  text-slate-700 drop-shadow-sm font-semibold " for="category">Min Price</label>
                     <select
                         onChange={inputHandler}
-                        className="border-2 p-1 pl-3 pr-3 rounded-lg border-sky-500 border-opacity-30"
+                        className=" w-full  border-2 p-1 pl-3 pr-3 rounded-lg border-sky-500 border-opacity-30"
                         name="lprice">
                         <option selected value="0">0</option>
                         <option value="5000">5000</option>
@@ -90,7 +90,7 @@ export const ProductPage =  () => {
                     <select
                         
                         onChange={inputHandler}
-                        className="border-2 p-1 pl-3 pr-3 rounded-lg border-sky-500 border-opacity-30"
+                        className=" w-full  border-2 p-1 pl-3 pr-3 rounded-lg border-sky-500 border-opacity-30"
                         name="hprice">
                         <option value="5000">5,000</option>
                         <option value="10000">10,000</option>
@@ -104,7 +104,7 @@ export const ProductPage =  () => {
                     <label className=" p-2 text-lg  text-slate-700 drop-shadow-sm font-semibold " for="category">Rating</label>
                     <select
                         onChange={inputHandler}
-                        className="border-2 p-1 pl-3 pr-3 rounded-lg border-sky-500 border-opacity-30"
+                        className=" w-full  border-2 p-1 pl-3 pr-3 rounded-lg border-sky-500 border-opacity-30"
                         name="rating">
                         <option selected value="0">0</option>
                         <option value="1">1</option>
